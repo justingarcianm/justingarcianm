@@ -45,25 +45,24 @@ li {
 	transition: 500ms ease;
 }
 
-.social {
-	padding-top: 15%;
-}
-
 .social a {
 	color: #222;
+	text-decoration: none;
+	transition: 500ms ease;
+}
+
+.modal-footer {
+	margin: auto;
+}
+
+.modal-footer a {
+	display: inline;
+	padding: 0 10px;
 }
 
 /* hide mobile links */
 .social-mobile {
 	display: none;
-}
-
-.modal-footer,
-.modal-footer .row {
-	display: block;
-}
-.modal-footer h3 {
-	text-align: center;
 }
 
 /* animation */
@@ -92,9 +91,13 @@ li {
 .links a:hover,
 .contactLink:hover {
 	letter-spacing: 0.1em;
+	text-decoration: underline !important;
 }
 .pointer:hover {
 	cursor: pointer;
+}
+.social a:hover {
+	font-size: 1.1em;
 }
 
 /* scroll box */
