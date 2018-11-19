@@ -36,6 +36,11 @@ body {
 .about .row {
 	height: 80px;
 }
+.head,
+.links,
+.contactLink {
+	animation: fadein 2s;
+}
 
 .content {
 	display: none;
