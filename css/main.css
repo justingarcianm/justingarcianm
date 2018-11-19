@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
+/* main edits */
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
 }
 
-.work-content::-webkit-scrollbar {
-	display: none;
+li {
+	list-style: none;
 }
 
 .head {
@@ -23,9 +24,8 @@ body {
 	padding: 130px 0px 0px 130px;
 }
 
-.work-content {
-	height: 400px;
-	overflow-y: scroll;
+.about h5 {
+	text-decoration: underline;
 }
 
 .work-content p {
@@ -33,49 +33,16 @@ body {
 	padding-left: 5px;
 }
 
-.about .row {
-	height: 80px;
-}
-.head,
-.links,
-.contactLink {
-	animation: fadein 2s;
-}
-
-.content {
-	display: none;
-	animation: fadein 2s;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
 .content.active {
 	display: block;
 }
 
-.links li,
-.contactLink li {
-	list-style: none;
-}
-
 .links a,
-.contactLink a {
+.contactLink {
 	color: #222;
 	font-size: 3em;
 	line-height: 4.8em;
 	transition: 500ms ease;
-}
-
-.links a:hover,
-.contactLink a:hover {
-	letter-spacing: 0.1em;
 }
 
 .social {
@@ -86,10 +53,7 @@ body {
 	color: #222;
 }
 
-.social a:hover {
-	color: #999;
-	text-decoration: none;
-}
+/* hide mobile links */
 .social-mobile {
 	display: none;
 }
@@ -102,41 +66,74 @@ body {
 	text-align: center;
 }
 
-@media (max-width: 990px) {
-	body {
-		background-color: #eeeeee;
-		color: #222;
-	}
+/* animation */
 
+.head,
+.links,
+.contactLink {
+	animation: fadein 2s;
+}
+
+.content {
+	display: none;
+	animation: fadein 2s;
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* hover effects */
+
+.links a:hover,
+.contactLink:hover {
+	letter-spacing: 0.1em;
+}
+.pointer:hover {
+	cursor: pointer;
+}
+
+/* scroll box */
+
+.work-content {
+	height: 400px;
+	overflow-y: scroll;
+}
+
+.work-content::-webkit-scrollbar {
+	display: none;
+}
+
+/* mobile */
+
+@media (max-width: 990px) {
+	/* main edits */
 	.head {
 		height: 50vh;
 		border-right: none;
 		background-position: center;
-		border-radius: 0 0 160px 160px;
+		border-bottom: 10px solid #222;
 	}
 	.welcome .col-lg-12 {
 		padding: 30px;
 		line-height: 2em;
 		font-size: 1.2em;
 	}
+	.welcome p {
+		padding: 50px;
+	}
 
-	.about,
-	.work,
 	.content {
-		line-height: 1.5em;
 		padding: 40px 50px;
 		text-align: center !important;
 	}
-	.links,
-	.contactLink,
-	.social,
-	.mobile-hide {
-		display: none;
-	}
-	.content,
-	.social-mobile,
-	.work {
-		display: block;
+
+	.work-content {
+		padding: 20px 0;
 	}
 
 	.social-mobile {
@@ -153,5 +150,17 @@ body {
 	.social-mobile a {
 		color: white;
 		width: inherit;
+	}
+
+	/* hide/show content */
+	.links,
+	.contactLink,
+	.social,
+	.mobile-hide {
+		display: none;
+	}
+	.content,
+	.social-mobile {
+		display: block;
 	}
 }
