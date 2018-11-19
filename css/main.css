@@ -115,16 +115,23 @@ li {
 
 @media (max-width: 990px) {
 	/* main edits */
+	h1 {
+		padding-bottom: 10px;
+		text-align: center;
+	}
 	.head {
 		height: 50vh;
 		border-right: none;
 		background-position: center;
 		border-bottom: 10px solid #222;
 	}
-
+	.welcome h1 {
+		padding-top: 10px;
+	}
 	.content {
-		padding: 40px 50px;
-		text-align: center !important;
+		padding: 10px 20px;
+		margin: auto;
+		text-align: center;
 	}
 
 	.work-content {
