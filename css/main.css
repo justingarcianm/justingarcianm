@@ -73,6 +73,10 @@ body {
 	letter-spacing: 0.1em;
 }
 
+.social {
+	padding-top: 15%;
+}
+
 .social a {
 	color: #222;
 }
@@ -105,29 +109,31 @@ body {
 		background-position: center;
 		border-radius: 0 0 160px 160px;
 	}
+	.welcome .col-lg-12 {
+		padding: 30px;
+		line-height: 2em;
+		font-size: 1.2em;
+	}
 
-	.welcome,
 	.about,
 	.work,
 	.content {
 		line-height: 1.5em;
-		padding: 100px 50px 10px;
+		padding: 40px 50px;
 		text-align: center !important;
 	}
 	.links,
 	.contactLink,
-	.social {
+	.social,
+	.mobile-hide {
 		display: none;
 	}
 	.content,
-	.social-mobile {
+	.social-mobile,
+	.work {
 		display: block;
 	}
 
-	.work .social {
-		display: block;
-		padding-bottom: 50px;
-	}
 	.social-mobile {
 		position: fixed;
 		bottom: 0;
@@ -136,16 +142,11 @@ body {
 		width: 90%;
 	}
 
-	.social-mobile button {
-		width: inherit;
-	}
 	.social-mobile .col-sm-12 {
 		padding: 2px;
 	}
 	.social-mobile a {
 		color: white;
-	}
-	.mobile-hide {
-		display: none;
+		width: inherit;
 	}
 }
