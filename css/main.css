@@ -121,14 +121,6 @@ li {
 		background-position: center;
 		border-bottom: 10px solid #222;
 	}
-	.welcome .col-lg-12 {
-		padding: 30px;
-		line-height: 2em;
-		font-size: 1.2em;
-	}
-	.welcome p {
-		padding: 50px;
-	}
 
 	.content {
 		padding: 40px 50px;
