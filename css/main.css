@@ -134,6 +134,9 @@ li {
 		text-align: center;
 	}
 
+	.work {
+		padding-bottom: 30px;
+	}
 	.work-content {
 		padding: 20px 0;
 	}
