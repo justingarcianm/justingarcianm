@@ -130,10 +130,22 @@ body {
 	}
 	.social-mobile {
 		position: fixed;
-		margin-top: 425px;
+		bottom: 0;
+		left: 5%;
+		z-index: 1;
+		width: 90%;
 	}
 
+	.social-mobile button {
+		width: inherit;
+	}
+	.social-mobile .col-sm-12 {
+		padding: 2px;
+	}
 	.social-mobile a {
-		color: black;
+		color: white;
+	}
+	.mobile-hide {
+		display: none;
 	}
 }
